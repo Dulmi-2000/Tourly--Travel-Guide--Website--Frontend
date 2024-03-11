@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap');
+/*
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+  transition: .3s ease;
+}
+
+
+:root{
+   --primaryColor: hsl(26,93%,50%);
+   --HoverColor:hsl(26,90%,42%);
+   --whiteColor:hsl(0,0%,100%);
+   --blackColor:hsl(0,0%,18%);
+   --textColor:hsl(240,1%,48%);
+   --whiteColorDeam:hsl(240,0%,93%);
+   --greyBg:rgb(128, 128, 133);
+   --greyText:rgb(190,190,190);
+   --inputColor:hsl(330,12%,97%);
+}
+
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.section{
+  padding: 4rem 0 2rem;
+}
+
+.container{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+
+}
+
+.logo{
+  font-size: 2rem;
+  cursor: pointer;
+  color: chocolate;
+}
+
+p{
+  color: chocolate;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.grid{
+  display: grid;
+  align-items: center;
+}
+
+.btn{
+  display: grid;
+  background: var(--primaryColor);
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.btn a{
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+
+.btn:hover{
+  color: var(--whiteColor);
+}
+
+.secIntro{
+  max-width: 70%;
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+
+.secIntro.secTitle{
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 5rem;
+}
+
+.secIntro p{
+  font-size: 13px;
+  color: var(--textColor);
+}
+
+img, video{
+  width: 100%;
+  height: auto;
+}
+
+input{
+  font-size: 100%;
+}*/

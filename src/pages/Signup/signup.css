@@ -1,0 +1,56 @@
+.container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 2% auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.signup-box{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.link1 {
+    color: rgb(69, 16, 229); 
+  }
+  
+
+h1{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fffefe;
+}
+
+
+.form1 {
+    background-color: #0f3c5b97;
+    width: 30%;
+    color: #191414;
+    margin: 3% auto; 
+    height: fit-content;
+    font-size: 15px;
+    padding: 50px 50px 50px 30px; 
+  }
+  
+ .bttn{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fffffff9;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 6px;
+    padding-top: 6px; 
+    font-weight: bold;
+    background-color:  #0072b4be;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}

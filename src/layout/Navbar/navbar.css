@@ -1,0 +1,49 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Roboto+Condensed:wght@500&family=Whisper&display=swap');
+
+
+.navbar {
+    background-color: #74620A;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.navbar-brand {
+    font-family: 'Kalam', cursive;
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+}
+
+.nav-item-right{
+  display: flex;
+  float: right;
+  gap: 10px;
+ }
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+.btn2{
+    font-weight: 500;
+    border: 1px solid #ffffff;
+    font-style: inherit;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px 15px 3px 15px;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    text-wrap: wrap;
+    margin-left: 10px; 
+}
