@@ -1,21 +1,16 @@
 .container10 {
     width: 100%; 
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
     
   }
   
   .imgcover {
     width: 100%;
-    height: 47.5vw;
-  }
-  .image-div{
-    
+    height: 35.5vw;
   }
   
-  .imgcover img {
-    
-   
-  }
 
 .formtour{
     background-color: #000000;
@@ -64,3 +59,51 @@
    border-radius: 20px;
    text-shadow: 10px;
 }
+
+.frm1{
+        background-color: #74620a38;
+        width: 100%;
+        color: #191414;
+        text-align: center;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        padding-top: 20px; 
+        padding-bottom: 30px;
+
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+.group-data{
+    display: flex;
+    line-height: 30px;
+    align-items: center;
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .input{
+    justify-content: space-around;
+    display: flex;
+    
+  }
+  #username12{
+    display: flex;
+  
+    justify-items: center;
+    justify-content: space-around;
+  }
+  .icon1{
+    position: relative;
+    left: 2rem;
+    fill: none;
+    width: 1.5rem;
+    height: 2rem;
+    justify-content: center;
+    color: #737e8e;
+  }

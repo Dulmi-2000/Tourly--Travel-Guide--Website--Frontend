@@ -15,15 +15,15 @@ function App() {
       <Router>
       <Navbar></Navbar>
       <Routes>
-          <Route path='/About/About' element={<About />}></Route>
-          <Route path='/Popular/Popular' element={<Popular />}></Route>
-          <Route path='/Destination/Destination' element={<Destination />}></Route>
-          <Route path='/Blog/Blog' element={<Blog />}></Route> 
+          <Route path='/About/About' element={<About />} />
+          <Route path='/Popular/Popular' element={<Popular/>}></Route>
+          <Route path="/Destination/Destination/:locationName" element={<Destination />}></Route>
+          <Route path='/Blog/Blog' element={<Blog/>}></Route> 
           <Route path='/Login/Login' element={<Login />}></Route> 
           <Route path='/Signup/Signup' element={<Signup />}></Route> 
           <Route path='/' element={<Home></Home>}></Route>
-        </Routes>
-        </Router>
+      </Routes>
+      </Router>
 
     </div>
   );

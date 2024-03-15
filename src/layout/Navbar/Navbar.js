@@ -55,7 +55,7 @@ export default function Navbar() {
             <Link className="nav-link" to="Popular/Popular">Popular</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="Destination/Destination">Popular</Link>
+            <Link className="nav-link" to="Destination/Destination">Destination</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="Blog/Blog">Blog</Link>

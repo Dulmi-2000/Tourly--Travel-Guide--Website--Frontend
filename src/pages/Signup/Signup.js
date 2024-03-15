@@ -36,7 +36,7 @@ export default function Signup() {
       if (!existingUser) {
         // If email doesn't exist, register the user
         await axios.post("http://localhost:8080/user", user);
-        navigate("/");
+        
       } else {
         // If email exists, display a message
         setMessage('Email already exists. Please log in.');
@@ -47,7 +47,7 @@ export default function Signup() {
         try {
           // Add the user to the database since the email doesn't exist
           await axios.post("http://localhost:8080/user", user);
-          navigate("/");
+          navigate("/Login/Login");
         } catch (addError) {
           console.error('Error adding user:', addError);
         }
