@@ -1,70 +1,51 @@
-import React, { useEffect, useState } from 'react';
-import { Link,  useParams } from 'react-router-dom';
-import axios from 'axios';
+import React from 'react';
 import './destination.css'
+import 'bootstrap/dist/css/bootstrap.css'
 
-export default function ViewUSer() {
-
-
-    
-  const [location, setLocation] = useState({
-    description: '',
-    mapLink: '',
-    locationName: ''
-  });
-  const { locationName } = useParams();
-
-
-  const { description,imageLink,id,district, mapLink,otherDetails } = location;
-
-  useEffect(() => {
-    loadUser();
-}, []);
-
-const loadUser = async () => {
-    try {
-        const result = await axios.get(`http://localhost:8080/destination/${locationName}`);
-        setLocation(result.data);
-    } catch (error) {
-        console.error('Error loading user:', error);
-    }
-}
-
+export default function Destination() {
   return (
-     
-    <div className='container'>
-      <div className='row'>
-        <div className='col md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
-          <h2 className='text-center m-4'>User Details</h2>
-                      <br></br>
-                      
-                      <div className='card'>
-                          <div className='card-header'>
-            <h4>  Details of user id  </h4> {id}
-              <br></br>
-              <br></br>
-                              <ul className='list-droup list-group-flush'>
-                                  <li className='list-group-item'>
-                                  <b>Description :</b>   {description}
-                                  </li> 
-                                  <li className='list-group-item'>
-                                  <b>image : </b> <img src={imageLink} alt='image' className='image'></img>
-                                  </li> 
-                                  <li className='list-group-item'>
-                                  <b>locationName :   </b>  {locationName}
-                </li> 
-                <li className='list-group-item'>
-                                  <b>image : </b> <img src={mapLink} alt='image' className='image'></img>
-                                  </li> 
-                              </ul>
-                              
-                          </div>
-                          
-                      </div>
-                      <Link className='btn btn-primary my-2' to={"/"}>Back to Home</Link>
-                  </div>
-              </div>
-              </div>
+    <div className='container full'>
+      
+      
+      <h1 className='topic'>Unawatuna</h1>
+      <br></br>
+      <div className='imagebox col-12'>
 
+        <div className=' col-12 col-lg-8 col-md-8 col-sm-12'>
+          <img src='https://i.content4travel.com/cms/img/u/kraj/1/sri_lanka_0.jpg?version=1'
+            alt='' className='imagelink1'>
+            
+          </img>
+        </div>
+
+        <div className='twoimages col-12 col-lg-4 col-sm-4'>
+        
+      
+        <div className=''>
+        <img src='https://mediaim.expedia.com/destination/2/9f669d8bcf75b9805552cb29bfc0d593.jpg'
+            alt='' className='imagelink2'>
+            
+          </img>
+        </div>
+        <div className=''>
+        <img src='https://explore.vacations/wp-content/uploads/2020/09/Unawatuna-The-Peace-Pagoda-Sri-Lanka-.jpg'
+            alt='' className='imagelink2'>
+            
+          </img> 
+        </div>
+        </div>
+
+      </div>
+      <div className='row2'>
+         
+      </div>
+      <div className='row3'>
+         
+      </div>
+
+
+  
+
+    </div>
   )
 }

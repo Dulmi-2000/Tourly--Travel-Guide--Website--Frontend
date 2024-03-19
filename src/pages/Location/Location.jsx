@@ -5,8 +5,6 @@ import './location.css'
 import { CiLocationOn } from "react-icons/ci";
 
 export default function Location() {
-
-
     
   const [location, setLocation] = useState({
     description: '',

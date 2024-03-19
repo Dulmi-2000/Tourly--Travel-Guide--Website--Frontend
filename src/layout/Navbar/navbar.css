@@ -3,23 +3,20 @@
 
   .section{
     padding: 2rem 0 1rem;
+    overflow: hidden;
+  }
+  .NavBarSection{
+    overflow: hidden;
+    
+
   }
   .flex{
     display: flex;
     align-items: center;
   }
-  .btn3{
-    padding: .4rem 1.5rem;
-    border: 1px solid #ffffff;
-    border-radius: 2rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-  }
+
   .btn3:hover{
-    color: rgba(161, 210, 233, 0.885);
+    background-color: rgba(4, 144, 209, 0.885);
   }
   .grid{
     display: grid;
@@ -28,16 +25,17 @@
   .close-icon{
     font-size: 27px;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: rgb(12, 95, 118);
   }
   .list-icon{
     font-size: 25px;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
-  .close.icon:hover{
-    color: blueviolet;
+  .close-icon:hover{
+    color: rgba(4, 144, 209, 0.885);
   }
+  /*navbar color*/
   .header{
     position: fixed;
     display: flex;
@@ -46,11 +44,11 @@
     width: 100%;
     padding: 1rem;
     z-index: 1000;
-    background-color: rgba(12, 95, 118, 0.855);
+    background-color: rgb(15, 118, 146);
     /*box-shadow: 0.2px 2px rgb(222, 222, 230);*/
   }
   .navlink{
-    color: rgb(159, 50, 50);
+    color: rgb(12, 95, 118);;
     font-size: .9rem;
     font-weight: 600;
     text-decoration: none;
@@ -59,13 +57,13 @@
   }
 
   .navlink:hover{
-    color: rgb(33, 56, 49);
+    color: rgba(4, 144, 209, 0.885)
   }
   .navitem{
     padding: .5rem 0;
   }
-  
-  @media screen and (max-width:768px) {
+  /*small screen*/
+  @media screen and (max-width:679px) {
     
     .navLists{
       flex-direction: column;
@@ -81,22 +79,36 @@
     position: absolute;
     background-color: rgb(255, 255, 255);
     height: max-content;
-    width: 80%;
+    width: 65%;
     border-radius: 1rem;
     left: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
     transform: translate(-50%);
     z-index: 2000;
-    box-shadow: 0 2px 4px green;
+    box-shadow: 0 2px 4px rgba(12, 95, 118, 0.855);;
     transition: .5s ease-in-out;
-    padding: 0.1rem;
+    padding: 2rem;
     text-decoration: none;
     top: -600rem;
+    color: rgba(12, 95, 118, 0.855);
   
+  }
+  .btn3{
+    padding: .4rem 1.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
   }
     
   }
   .btn3{
     margin-top: 1rem;
+    background-color: rgba(12, 95, 118, 0.855);
   }
   
   a{
@@ -107,7 +119,7 @@
     position: absolute;
     top: 1rem;
     right: 1.5rem;
-    color: rgb(0, 0, 0);
+    color: rgba(12, 95, 118, 0.855);;
   }
   .logodiv{
     font-size: 25px;
@@ -139,7 +151,7 @@
   
   
   
-  @media(min-width: 768px) {
+  @media(min-width: 680px) {
     .togglenavbar,.closeNavbar {
       display: none;
     }
@@ -160,7 +172,7 @@
               font-weight: 500;
   
               &:hover{
-                color: rgba(161, 210, 233, 0.885);
+                color: rgba(4, 144, 209, 0.885)
               }	
               
             }
@@ -168,8 +180,12 @@
           .btn3{
             margin-left: 1rem;
             border: 1px solid #ffffff;
-            color: rgb(152, 220, 232);
-  
+            padding: .4rem 1.5rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            background-color: transparent;
           }
         }
       }

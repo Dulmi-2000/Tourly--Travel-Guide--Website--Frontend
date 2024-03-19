@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route,Routes} from 'react-router-dom';
 import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
 import Destination from './pages/Destination/destination';
+import Location from './pages/Location/Location';
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
       <Routes>
           <Route path='/About/About' element={<About />} />
           <Route path='/Popular/Popular' element={<Popular/>}></Route>
-          <Route path="/Destination/Destination/:locationName" element={<Destination />}></Route>
+          <Route path="/Destination/Destination" element={<Destination />}></Route>
           <Route path='/Blog/Blog' element={<Blog/>}></Route> 
           <Route path='/Login/Login' element={<Login />}></Route> 
           <Route path='/Signup/Signup' element={<Signup />}></Route> 
+          <Route path='/Location/Location/:locationName' element={<Location />}></Route> 
           <Route path='/' element={<Home></Home>}></Route>
       </Routes>
       </Router>

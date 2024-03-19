@@ -1,22 +1,82 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './blog.css';
+import { IoMdCloseCircle } from "react-icons/io";
+import { TbGridDots } from "react-icons/tb";
 
-// Parent component
-const ParentComponent = () => {
+export default function Blog() {
+
+  const [active, setActive] = useState(false);
+
+  // Function to toggle navbar
+  const  shownav = () => {
+    setActive(!active);
+    // Toggles the state between true and false
+  };
+  
+  // Function to close nav bar
+  const closeNavbar = () => {
+    setActive(false);
+    // Set the state to false to close the navbar
+  };
+  
+
+
   return (
-    <div>
-      <h1>This is the Parent Component</h1>
-      <ChildComponent />
-    </div>
-  );
-};
+    <section className='NavBarSection'>
+      <header className='header flex'>
 
-// Child component
-const ChildComponent = () => {
-  return (
-    <div>
-      <h2>This is the Child Component</h2>
-    </div>
-  );
-};
+        <div className='logodiv'>
+        <Link className="navbar-brand" to="/">Tourly</Link>
+       
+        </div>
+       
 
-export default ParentComponent;
+        <div className={`navBar expand-lg ${active ? 'activeNavBar' : ''}`} >
+          
+          <ul className="navLists grid">
+            
+       
+          <li className="navitem">
+            <Link className="navlink" to="/">Home</Link>
+          </li>
+
+          <li className="navitem">
+            <Link className="navlink" to="Popular/Popular">Popular</Link>
+          </li>
+          <li className="navitem">
+            <Link className="navlink" to="Destination/Destination">Destination</Link>
+          </li>
+          <li className="navitem">
+            <Link className="navlink" to="Blog/Blog">Blog</Link>
+          </li>
+          
+            
+          <li className='navitem'>
+            <Link className="btn3" to="Login/Login"> Login  </Link>
+          </li>
+
+          <li className='navitem'>
+            <Link className="btn3"  to="Signup/Signup"> Sign Up  </Link>
+          </li>
+            
+          </ul> 
+
+
+          <div onClick={closeNavbar}  className="closeNavbar">
+            <IoMdCloseCircle className='close-icon'/>
+          </div>
+          
+
+        </div>
+  
+        <div className='togglenavbar expand-sm' onClick={shownav}>
+          <TbGridDots className='list-icon' />
+        </div>
+        
+
+      </header>
+
+    </section>
+  )
+}
