@@ -9,6 +9,7 @@ import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
 import Destination from './pages/Destination/destination';
 import Location from './pages/Location/Location';
+import Footer from './pages/Footer/Footer';
 
 function App() {
   return (
@@ -24,8 +25,10 @@ function App() {
           <Route path='/Signup/Signup' element={<Signup />}></Route> 
           <Route path='/Location/Location/:locationName' element={<Location />}></Route> 
           <Route path='/' element={<Home></Home>}></Route>
+
       </Routes>
       </Router>
+      <Footer/>
 
     </div>
   );
