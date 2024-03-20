@@ -2,19 +2,56 @@ import React, { useEffect, useState } from 'react';
 import { Link,  useParams } from 'react-router-dom';
 import axios from 'axios';
 import './location.css'
+import 'bootstrap/dist/css/bootstrap.css';
 import { CiLocationOn } from "react-icons/ci";
 
-export default function Location() {
-    
+
+export default function Destination() {
+
   const [location, setLocation] = useState({
-    description: '',
+    description1: '',
+    description2: '',
+    description3: '',
+    description4: '',
+    imageLink: '',
+    imageLink1: '',
+    imageLink2: '',
+    imageLink3: '',
+    locationName: '',
+    district: '',
     mapLink: '',
-    locationName: ''
+    list1: '',
+    list2: '',
+    list3: '',
+    list4: '',
+    list5: '',
+    list6: '',
+    list7: '',
+    list8: '',
+    list9: '',
+    list10: '',
+    ltopic1: '',
+    ltopic2: '',
+    ltopic3: '',
+    ltopic4: '',
+    ltopic5: '',
+    ltopic6: '',
+    ltopic7: '',
+    ltopic8: '',
+    ltopic9: '',
+    ltopic10: '',
+    date: '',
+    datedes1: '',
+    datedes2: '',
+    datedes3: '',
+    datedes4: '',
+    otherDetails: '',
+
   });
   const { locationName } = useParams();
 
 
-  const { description,imageLink,id,district, mapLink,otherDetails } = location;
+  const { description1,description2,description3,description4,ltopic1,ltopic2,ltopic3,ltopic4,ltopic5,ltopic6,ltopic7,ltopic8,ltopic9,ltopic10,id,district, list1,list2,list3,list4,list5,list6,list7,list8,list9,list10,mapLink,otherDetails,date,datedes1,datedes2,datedes3,datedes4,imageLink,imageLink1,imageLink2,imageLink3 } = location;
 
   useEffect(() => {
     loadUser();
@@ -27,73 +64,142 @@ const loadUser = async () => {
     } catch (error) {
         console.error('Error loading user:', error);
     }
-}
-
+  }
+  
+  
   return (
+    <div className='container full'>
+      
+      
+      <h1 className='topic col-12'>{locationName && locationName.charAt(0).toUpperCase() + locationName.slice(1)}</h1>
+
+      <br></br>
+      <div className='imagebox col-12'>
+
+        <div className=' col-12 col-lg-8 col-md-8 col-sm-12'>
+          <img src={imageLink}
+            alt='' className='imagelink1'>
+            
+          </img>
+        </div>
+
+        <div className='twoimages col-12 col-lg-4 col-sm-4'>
+        
+      
+        <div className=''>
+        <img src={imageLink1}
+            alt='' className='imagelink2'>
+            
+          </img>
+        </div>
+        <div className=''>
+        <img src={imageLink2}
+            alt='' className='imagelink2'>
+            
+          </img> 
+        </div>
+        </div>
+
+      </div>
+
+      <span className='content-flex locationd col-12'>
+        <CiLocationOn className='iconsearch' />
+          <span className='name col-12'>{district}</span>
+          </span>
+      <br /><br></br>
+      
+      <div className='row2'>
+        <br></br>
+        <br />
+        <h3 className='destDetails'>Destination Details</h3>
+       <br/>
+        <p>
+          {description1}
+          
+          {description2}
+        </p>
+
+        <p>
+          {description3}
+          {description4}
+        </p>
+        <div>
+          <br>
+          </br>
+
+          
+          <h3>Things To Do</h3>
+        <br></br>
+          <div>
+            <ul className='dolist'> 
+              <li>
+                <b>{ltopic1}</b>
+                {list1}
+              </li>
+              <li>
+                <b>{ltopic2} </b>
+                {list2}
+              </li>
+              <li>
+                <b> {ltopic3}</b>
+                {list3}
+              </li>
+              <li>
+                <b>{ltopic4}</b>
+                {list4}
+              </li>
+              <li>
+                <b>{ltopic5} </b>
+                {list5}
+              </li>
+              <li>
+                <b>{ltopic6}</b>
+                {list6}
+              </li>
+              <li>
+                <b>{ltopic7} </b>
+                {list7}
+              </li>
+              <li>
+                <b> {ltopic8}</b> 
+                {list2}
+              </li>
+            </ul>
+             
+            <br></br>
+            <div className='row3'>
+              <h3>Best Time To Visit</h3>
+              <br></br>
+            </div>
+            <b>{date}</b>
+            <p>
+              {datedes1}
+              {datedes2}
      
-    <div className='container'>
-      <div className='row'>
-        <div className='contentgrid'>
-          <h2>Explore {locationName}</h2>
-                      <br></br>
-                      
-              
-                      
-                  {/*new*/}
-                  <div className='singleDestination'>
-                      <div className='imagediv'>
-                          <img src={imageLink} alt={district}></img>
-                      </div>
-                      
-                      <div className='cardinfo'>
-                          <h5 className='destTitle'>{locationName}</h5>
+              {datedes3}
+              {datedes4}
+            </p>
 
-                          <span className='content-flex content'>
-                              <CiLocationOn className='iconsearch' />
-                              <span className='name'>{district}</span>
-                          </span>
 
-                          <div className='desc'>
-                              <p>{otherDetails}</p>
-                          </div>
-                      </div>
+<br></br>
 
-                      </div>
-
-                      </div>
-                   {/*   <Link className='btn btn-primary my-2' to={"/"}>Back to Home</Link>*/}
+            <div className='row4'>
+              <h3>View On Map</h3>
+              <div className="map-container">
+      <iframe
+        title="Google Map"
+        className="map-iframe"
+        src={mapLink}
+        allowFullScreen
+      ></iframe>
               </div>
               
-              <div>
-                  
               </div>
-              </div>
-              
+      </div>
+          </div>
+        </div>
+      </div>
 
+      
   )
 }
-     /*     <div className='card'>
-                          <div className='card-header'>
-            
-              <br></br>
-              <br></br>
-                           <ul className='list-droup list-group-flush'>
-                                  <li className='list-group-item'>
-                                  <b>Description :</b>   {description}
-                                  </li> 
-                                  <li className='list-group-item'>
-                                  <b>image : </b> <img src={imageLink} alt='image' className='image'></img>
-                                  </li> 
-                                  <li className='list-group-item'>
-                                  <b>locationName :   </b>  {locationName}
-                </li> 
-                <li className='list-group-item'>
-                                  <b>image : </b> <img src={mapLink} alt='image' className='image'></img>
-                                  </li> 
-                              </ul>
-                              
-                          
-  
-                      </div>
-                      </div>
-                      */
