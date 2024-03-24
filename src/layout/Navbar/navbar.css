@@ -1,5 +1,9 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Roboto+Condensed:wght@500&family=Whisper&display=swap');
+/* fonts.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto+Condensed:wght@500&family=Whisper&display=swap');
+
 
   .section{
     padding: 2rem 0 1rem;
@@ -7,8 +11,13 @@
   }
   .NavBarSection{
     overflow: hidden;
-    
+    font-weight: 600;
+    font-size: 20px;
 
+  }
+  .navbar-brand{
+    font-family: 'Kalam', sans-serif;
+    
   }
   .flex{
     display: flex;
@@ -42,14 +51,14 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem;
     z-index: 1000;
     background-color: rgb(15, 118, 146);
     /*box-shadow: 0.2px 2px rgb(222, 222, 230);*/
   }
   .navlink{
     color: rgb(12, 95, 118);;
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 600;
     text-decoration: none;
     font-size: 1rem;
@@ -60,8 +69,10 @@
     color: rgba(4, 144, 209, 0.885)
   }
   .navitem{
-    padding: .5rem 0;
+    padding: .4rem 0;
   }
+
+
   /*small screen*/
   @media screen and (max-width:679px) {
     
@@ -72,12 +83,17 @@
       margin: auto;
       padding: .5rem 0;	
       list-style-type: none;
+      font-size: 800;
+      font-weight: 600;
+     
     }
     
   
   .navBar{
     position: absolute;
     background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
     height: max-content;
     width: 65%;
     border-radius: 1rem;
@@ -86,16 +102,18 @@
     padding-right: 50px;
     transform: translate(-50%);
     z-index: 2000;
-    box-shadow: 0 2px 4px rgba(12, 95, 118, 0.855);;
+    box-shadow: 0 2px 4px rgba(12, 95, 118, 0.855);
     transition: .5s ease-in-out;
-    padding: 2rem;
+    padding: 1.3rem;
     text-decoration: none;
     top: -600rem;
     color: rgba(12, 95, 118, 0.855);
+    
   
   }
   .btn3{
-    padding: .4rem 1.5rem;
+    
+    padding: .3rem 1.5rem 0.5rem 1.5rem;
     border: 1px solid #ffffff;
     border-radius: 2rem;
     border: none;
@@ -103,6 +121,7 @@
     cursor: pointer;
     text-decoration: none;
     color: white;
+    font-size: 1rem;
   }
     
   }
@@ -156,20 +175,22 @@
       display: none;
     }
     .header{
-      padding: 0.5rem 2rem;
+      padding: 0.4rem 2rem;
       .navBar{
         .navLists{
           display: flex;
           align-items: center;
           justify-content: center;
           flex-direction: row;
+         
   
           .navitem{
             .navlink{
               color:rgb(255, 255, 255);
               padding: 0 0.45rem;
               font-size: 0.9rem;
-              font-weight: 500;
+              font-weight: 700;
+              font-size: 16px;
   
               &:hover{
                 color: rgba(4, 144, 209, 0.885)
@@ -180,12 +201,15 @@
           .btn3{
             margin-left: 1rem;
             border: 1px solid #ffffff;
-            padding: .4rem 1.5rem;
+
+            padding: .3rem 1.5rem 0.5rem 1.5rem;
             border-radius: 2rem;
             cursor: pointer;
             text-decoration: none;
             color: white;
             background-color: transparent;
+            font-size: 16px;
+            font-weight: 700;
           }
         }
       }
