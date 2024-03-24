@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import travel from '../../Assets/travel.png';
 import './login.css';
+import coverh from '../../Assets/coverh.jpg'
 
 
 export default function Login() {
@@ -50,7 +51,98 @@ export default function Login() {
 
 
     return (
-        <div className='main'>
+        
+                 
+        <div className='imgcov col-12' style={{ backgroundImage: `url(${coverh})` }}> 
+          
+          <div className='log col-12 container'>
+                    <div className='signinform col-12'>
+                    
+                <div className='rightside  col-lg-6'>
+                        <h1 className='descript'>Welcome </h1>
+                        <h1 className='descript'>Back</h1>
+                    </div>
+                    <div className='leftside  col-lg-6'>
+                  
+                        <div className='frm col-12'>
+         
+            <h1 className='logdes'>Login</h1>
+            
+                  <form onSubmit={(e) => handleSubmit(e)}>
+
+
+                        <div class="group col-12">
+
+                            
+                            <input
+                                className='input11'
+                                placeholder='Enter your username'
+                                type='text'
+                                id='username'
+                                ref={userRef}
+                                autoComplete='off'
+                                onChange={(e) => setUser({ ...user, username: e.target.value })}
+                                value={user.username}
+                                required
+                            />
+                      </div>
+
+
+                        <br />
+                        <br />
+                   
+
+                        <div class="group">
+
+                            
+                            <input
+                                className='input11'
+                                placeholder='Enter your password'
+                                type='password'
+                                id='password'
+                                autoComplete='off'
+                                onChange={(e) => setPwd(e.target.value)}
+                                value={pwd}
+                                required
+                                    />
+                            <br/>
+                                     
+                      </div>
+                      <p style={{ textAlign: 'center' }}>
+                         <Link className='link3' to=''>Forgot Password ?</Link>
+                    </p>
+
+                    <br />
+                    <br />
+                    
+                        <button className='btn5' type='submit'>
+                            Login
+                      </button>
+                                <br></br>
+                                <br></br>
+                                <hr></hr>
+
+                                <div className='signinlink'>
+
+                             
+                        <p  className='p1' style={{ textAlign: 'center' }}>
+                        Don't have an account? <Link className='link2' to='/Signup/Signup'>Sign In</Link>
+                                    </p>
+                                    </div>
+                </form>
+                    </div>
+            </div>
+            
+            </div>
+            </div>
+                </div>
+      
+    );
+
+}
+    
+
+  /* <div className='main'>
 
        
         <div className='whole' >
@@ -147,10 +239,4 @@ export default function Login() {
                     </div>
                 </div>
      
-                </div>
-    );
-
-}
-    
-
-  
+                </div>*/

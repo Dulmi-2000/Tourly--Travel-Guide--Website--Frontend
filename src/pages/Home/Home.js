@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import tourly from '../../Assets/tourly.png';
 import '../Home/home.css';
-import Blog from '../Blog/Blog';
 
 export default function Home() {
   const navigate = useNavigate();
