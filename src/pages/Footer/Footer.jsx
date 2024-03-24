@@ -14,12 +14,13 @@ const Footer = () => {
         <div className='footer-section'>
             <div className="container col-12">
                 <div className='left-half col-12 col-lg-4 col-md-12 col-sm-12'>
-                    <h3 className='hs'>Tourly</h3>
+                    <h3 className='hs1'>Tourly</h3>
                     <br></br>
                     <p className='brif'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-                    standard dummy text ever since the 1500s,
-                    </p>
+                      Tourly: Your Gateway to Sri Lanka's Diverse Wonders. Explore Pristine Beaches, Misty Mountains, and Vibrant Culture.
+                      Discover Hidden Gems with Our Comprehensive Guides and Curated Itineraries.
+                  </p>
+                  <br></br>
                     <div className='icons'>
                         <img src={fb} className='each-icon' />
                         <img src={insta} className='each-icon'/>
@@ -37,24 +38,24 @@ const Footer = () => {
                     <br></br>
                     <div className='quick-link'>
                         {/* <Link to='Home'>Home</Link> */}
-                        <p>Home</p>
-                        <p>About</p>
-                        <p>Places</p>
-                        <p>Home</p>
+                        <p className='p1'>Home</p>
+                        <p className='p1'>About</p>
+                        <p className='p1'>Places</p>
+                        <p className='p1'>Home</p>
                     </div>
                 </div>
 
-                <div className='links1 col-12 col-lg-4 col-md-3 col-sm-12 '>
+                {/* <div className='links1 col-12 col-lg-4 col-md-3 col-sm-12 '>
                 <h3 className='hs'>Tourly</h3>
                     <br></br>
                     <div className='quick-link'>
                         {/* <Link to='Home'>Home</Link> */}
-                        <p>Home</p>
-                        <p>About</p>
-                        <p>Places</p>
-                        <p>Home</p>
+                        {/* <p className='p1'>Home</p>
+                        <p className='p1'>About</p>
+                        <p className='p1'>Places</p>
+                        <p className='p1'>Home</p>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='links1 col-12 col-lg-3 col-md-2 col-sm-12 '>
                 <h3 className='hs'>Contacts</h3>
@@ -63,17 +64,17 @@ const Footer = () => {
                        
                         <div className='contact'>
                         <img src='./phn.jpg' className='each-icon'/>
-                        <p>+94 767 863 542 </p>
+                        <p className='p1'>+94 767 863 542 </p>
                         </div>
                            
                         <div className='contact'>
                         <img src='./phn.jpg' className='each-icon'/>
-                        <p>+94 767 863 542 </p>
+                        <p className='p1'>+94 767 863 542 </p>
                         </div>
 
                         <div className='contact'>
                         <img src='./phn.jpg' className='each-icon'/>
-                        <p>+94 767 863 542 </p>
+                        <p className='p1'>+94 767 863 542 </p>
                         </div>
                     </div>
                 </div>

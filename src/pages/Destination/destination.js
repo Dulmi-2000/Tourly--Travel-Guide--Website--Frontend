@@ -42,11 +42,11 @@ export default function Destination() {
         <CiLocationOn className='iconsearch' />
           <span className='name col-12'> Trincomalee District </span>
           </span>
-      <br /><br></br>
+    
       
       <div className='row2'>
         <br></br>
-        <br />
+        
         <h3 className='destDetails'>Destination Details</h3>
        <br/>
         <p>

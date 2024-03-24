@@ -1,46 +1,35 @@
 import React, { useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import travel from '../../Assets/travel.png';
 import './login.css';
 import coverh from '../../Assets/coverh.jpg'
 
-
 export default function Login() {
-    const errMsgRef = useRef(null);
-    const userRef = useRef(null);
+
     const navigate = useNavigate();
 
-    const [user, setUser] = useState('');
-    const [pwd, setPwd] = useState('');
+    const [password, setPassword] = useState('');
     const [errMsg, setErrMsg] = useState('');
+    const [email, setEmail] = useState('');
 
-    
-
-   
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { username, password } = user;
-            const usernameResponse = await axios.get(`http://localhost:8080/username/${username}`);
+            // Check if the username exists
+            const usernameResponse = await axios.get(`http://localhost:8080/email/${email}`);
             const existingUser = usernameResponse.data;
 
-            console.log("existingUser:", existingUser); // Log the existingUser data
-
             if (existingUser) {
-                console.log("passwords:", password, existingUser.password); // Log passwords for comparison
-
+                // User exists, check password
                 if (existingUser.password === password) {
-                    console.log("Passwords match, navigating...");
+                    // Passwords match, navigate to home page
                     navigate("/");
                 } else {
-                    console.log("Incorrect password");
+                    // Incorrect password
                     setErrMsg('Incorrect password. Please try again.');
                 }
-            }
-            else
-            {
-                console.log("User not found");
+            } else {
+                // User not found, prompt to sign up
                 setErrMsg('User not found. Please sign up.');
             }
         } catch (error) {
@@ -49,97 +38,72 @@ export default function Login() {
         }
     };
 
-
     return (
-        
-                 
-        <div className='imgcov col-12' style={{ backgroundImage: `url(${coverh})` }}> 
-          
-          <div className='log col-12 container'>
-                    <div className='signinform col-12'>
-                    
-                <div className='rightside  col-lg-6'>
+        <div className='imgcov col-12' style={{ backgroundImage: `url(${coverh})` }}>
+            <div className='log col-12 container'>
+                <div className='signinform col-12'>
+                    <div className='rightside  col-lg-6'>
                         <h1 className='descript'>Welcome </h1>
                         <h1 className='descript'>Back</h1>
                     </div>
                     <div className='leftside  col-lg-6'>
-                  
                         <div className='frm col-12'>
-         
-            <h1 className='logdes'>Login</h1>
-            
-                  <form onSubmit={(e) => handleSubmit(e)}>
-
-
-                        <div class="group col-12">
-
-                            
-                            <input
-                                className='input11'
-                                placeholder='Enter your username'
-                                type='text'
-                                id='username'
-                                ref={userRef}
-                                autoComplete='off'
-                                onChange={(e) => setUser({ ...user, username: e.target.value })}
-                                value={user.username}
-                                required
-                            />
-                      </div>
-
-
-                        <br />
-                        <br />
-                   
-
-                        <div class="group">
-
-                            
-                            <input
-                                className='input11'
-                                placeholder='Enter your password'
-                                type='password'
-                                id='password'
-                                autoComplete='off'
-                                onChange={(e) => setPwd(e.target.value)}
-                                value={pwd}
-                                required
+                            <h1 className='logdes'>Login</h1>
+                            <form onSubmit={(e) => handleSubmit(e)}>
+                                <div class="group col-12">
+                                    <input
+                                        className='input11'
+                                        placeholder='Enter your email'
+                                        type='text'
+                                        id='email'
+                                        autoComplete='off'
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        value={email}
+                                        required
                                     />
-                            <br/>
-                                     
-                      </div>
-                      <p style={{ textAlign: 'center' }}>
-                         <Link className='link3' to=''>Forgot Password ?</Link>
-                    </p>
-
-                    <br />
-                    <br />
-                    
-                        <button className='btn5' type='submit'>
-                            Login
-                      </button>
-                                <br></br>
-                                <br></br>
-                                <hr></hr>
-
+                                </div>
+                                <br />
+                                <div class="group">
+                                    <input
+                                        className='input11'
+                                        placeholder='Enter your password'
+                                        type='password'
+                                        id='password'
+                                        autoComplete='off'
+                                        onChange={(e) => setPassword(e.target.value)}
+                                        value={password}
+                                        required
+                                    />
+                                    <br />
+                                </div>
+                                <p style={{ textAlign: 'center' }}>
+                                    <Link className='link3' to=''>Forgot Password ?</Link>
+                                </p>
+                                <br />
+                                <br />
+                                <button className='btn5' type='submit'>
+                                    Login
+                                </button>
+                                <br />
+                                {errMsg && (
+                                    <p style={{ textAlign: 'center', color: 'red' }}>{errMsg}</p>
+                                )}
+                                <br />
+                                <hr />
                                 <div className='signinlink'>
-
-                             
-                        <p  className='p1' style={{ textAlign: 'center' }}>
-                        Don't have an account? <Link className='link2' to='/Signup/Signup'>Sign In</Link>
+                                    <p className='p1' style={{ textAlign: 'center' }}>
+                                        Don't have an account? <Link className='link2' to='/Signup/Signup'>Sign Up</Link>
                                     </p>
-                                    </div>
-                </form>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-            </div>
-            
-            </div>
-            </div>
                 </div>
-      
+            </div>
+        </div>
     );
-
 }
+
     
 
   /* <div className='main'>

@@ -54,6 +54,9 @@ width: 100%;
   border-radius: 50%;
   background-color:rgb(15, 118, 146);
 }
+.left-arrow-container:hover{
+  background-color: rgb(64, 87, 93);
+}
 
 .right-arrow-container {
   position: absolute;
@@ -63,4 +66,8 @@ width: 100%;
   padding: 5px;
   border-radius: 50%;
   background-color:  rgb(15, 118, 146);
+  
+}
+.right-arrow-container:hover{
+background-color: rgb(64, 87, 93);
 }
