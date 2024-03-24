@@ -10,6 +10,7 @@ import Signup from './pages/Signup/Signup';
 import Destination from './pages/Destination/destination';
 import Location from './pages/Location/Location';
 import Footer from './pages/Footer/Footer';
+import PopulorP from './pages/PopPlaces/PopulorP';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
           <Route path='/About/About' element={<About />} />
-          <Route path='/Popular/Popular' element={<Popular/>}></Route>
+          <Route path='/PopulorP/PopulorP' element={<PopulorP/>}></Route>
           <Route path="/Destination/Destination" element={<Destination />}></Route>
           <Route path='/Blog/Blog' element={<Blog/>}></Route> 
           <Route path='/Login/Login' element={<Login />}></Route> 
@@ -28,6 +29,7 @@ function App() {
 
       </Routes>
       </Router>
+     
       <Footer/>
 
     </div>

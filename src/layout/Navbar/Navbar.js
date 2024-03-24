@@ -42,7 +42,7 @@ export default function Navbar() {
           </li>
 
           <li className="navitem">
-            <Link className="navlink" to="Popular/Popular">Popular</Link>
+            <Link className="navlink" to="PopulorP/PopulorP">Popular</Link>
           </li>
           <li className="navitem">
             <Link className="navlink" to="Destination/Destination">Destination</Link>

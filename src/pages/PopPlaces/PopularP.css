@@ -1,0 +1,66 @@
+
+.pictures{
+   display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    animation-iteration-count: infinite;
+    gap: 20px;
+    scroll-behavior: smooth;
+    margin-left: 12px;
+    margin-right: 12px;
+    
+    
+}
+.places{
+  
+    height: 300px;
+    cursor: pointer;
+   
+}
+.left-arrow{
+ color: white;
+  z-index: 1;
+  float: left;
+}
+.right-arrow{
+    color:  white;
+  z-index: 1;
+  float: right;
+
+  display: flex;
+}
+.arrows{
+    display: flex;
+width: 100%;
+  z-index: 1;
+}
+
+
+
+
+
+
+/* PopularP.css */
+.container {
+  position: relative;
+}
+
+.left-arrow-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 5px;
+  border-radius: 50%;
+  background-color:rgb(15, 118, 146);
+}
+
+.right-arrow-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 5px;
+  border-radius: 50%;
+  background-color:  rgb(15, 118, 146);
+}
