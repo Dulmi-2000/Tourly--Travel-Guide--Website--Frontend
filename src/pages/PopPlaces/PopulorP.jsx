@@ -12,18 +12,19 @@ const PopulorP = () => {
 
   const slideLeft = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollLeft -= 500;
+      sliderRef.current.scrollLeft -= 320;
     }
   };
 
   const slideRight = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollLeft += 500;
+      sliderRef.current.scrollLeft += 320;
     }
   };
 
   // Array of image URLs
   const images = [
+    require('../../Assets/coastal123.jpeg'),
     'https://leisuregrouptravel.com/wp-content/uploads/2021/01/Photo-Credit-Austin-Adventures-North-Carolina-Grandfather-Mtn.jpg',
     'https://leisuregrouptravel.com/wp-content/uploads/2021/01/Photo-Credit-Austin-Adventures-North-Carolina-Grandfather-Mtn.jpg',
     'https://leisuregrouptravel.com/wp-content/uploads/2021/01/Photo-Credit-Austin-Adventures-North-Carolina-Grandfather-Mtn.jpg',
