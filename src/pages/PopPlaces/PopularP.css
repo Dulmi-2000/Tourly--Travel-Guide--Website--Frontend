@@ -15,6 +15,7 @@
   display: flex;
    flex-wrap: nowrap;
    overflow-x: scroll;
+   overflow: hidden;
    animation-iteration-count: infinite;
    gap: 20px;
    scroll-behavior: smooth;

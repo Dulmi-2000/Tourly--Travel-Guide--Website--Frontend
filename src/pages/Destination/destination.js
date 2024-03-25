@@ -8,12 +8,12 @@ export default function Destination() {
     <div className='container full'>
       
       
-      <h1 className='topic col-12 '>Pasikuda Beach</h1>
+      <h1 className='topic col-12 '>Arugam Bay</h1>
       <br></br>
       <div className='imagebox col-12'>
 
         <div className=' col-12 col-lg-8 col-md-8 col-sm-12'>
-          <img src='https://srilankatravelpages.com/media/2023/04/Pasikuda-Beach-view-.jpg'
+          <img src='https://us.lakpura.com/cdn/shop/files/LKI9256041-01-E.jpg?v=1661430881&width=3840'
             alt='' className='imagelink1'>
             
           </img>
@@ -23,13 +23,13 @@ export default function Destination() {
         
       
         <div className=''>
-        <img src='https://d3a2q5al71qg9.cloudfront.net/sites/13/2020/07/1-2.jpg'
+        <img src='https://image-converter.sporski.com/imageConverter.php?url=%2F%2Fuploads.takeoffsurftravel.com%2F20170111180051_Untitled-1.jpg'
             alt='' className='imagelink2'>
             
           </img>
         </div>
         <div className=''>
-        <img src='https://us.lakpura.com/cdn/shop/files/LK66157B60-10-E_cbb0040f-c6bc-44d7-9bd4-fc79d04c430e.jpg?v=1653374746&width=3200'
+        <img src='https://geckoroutes.com/wp-content/uploads/2020/03/arugam-bay-sri-lanka.jpg'
             alt='' className='imagelink2'>
             
           </img> 

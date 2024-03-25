@@ -1,9 +1,7 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import coverImage from '../../Assets/CoverN.jpg';
 import './HomeL.css'
-import tourly from '../../Assets/tourly.mp4'
 import bcvideo from '../../Assets/tourly.mp4'
 
 const HomeL = () => {
@@ -24,11 +22,12 @@ const HomeL = () => {
         {/* <div className='main-picture col-12' style={{ backgroundImage: `url(${coverImage})` }}>
        
         </div> */}
-      
       <div>
+
         <video autoPlay loop muted >
           <source src={bcvideo} type='video/mp4' />
         </video>
+
       </div>
         <div className='container ddd col-12' onSubmit={(e) => onSubmit(e)}>
           <div className='col-12 main-title'>
