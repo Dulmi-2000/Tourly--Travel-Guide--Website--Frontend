@@ -1,14 +1,79 @@
-.main-picture{
-    background-repeat: no-repeat;
-    background-size:cover ;
-    height: 70vh;
-    width: 100%;
-    filter: blur(2px);
-    
+@media (min-width: 1001px),( max-width: 5000px){
+#main-picture{
+   
+    right: 0;
+    bottom: 0;
+   width: 100%; 
+    height: 75vh;
+    object-fit: fill;
+   z-index: -1;
+    position: relative;
+    filter: blur(0.5px);
 }
-.ddd{
-    margin-top: -70vh;
 }
+@media (min-width: 768px),( max-width: 1000px){
+    #main-picture{
+        right: 0;
+        bottom: 0;
+       width: 100%; 
+        height: 75vh;
+        object-fit: fill;
+       
+        position: relative;
+    }
+}
+@media (max-width:767px){
+    #main-picture{
+        right: 0;
+        bottom: 0;
+       width: 100%; 
+        height: 35vh;
+        object-fit: fill;
+       
+        position: relative;
+    }
+   
+}
+@media (max-width:767px){
+    .input-main{
+        width: 250px;
+        height: 50px;
+        border-radius: 14px;
+        border-color: white;
+        border-style: initial;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        
+    }
+    .ddd{
+        margin-top: -42vh;
+    }
+}
+@media (min-width: 768px){
+    .ddd{
+        margin-top: -37vh;
+        text-shadow: black;
+        box-shadow: black;
+    }
+    .input-main{
+        width: 400px;
+        height: 50px;
+        border-radius: 14px;
+        border-color: white;
+        border-style: initial;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        box-shadow: black;
+        
+    }
+}
+
+
+
 .all-page{
     margin-top: 66px;
     justify-content: center;
@@ -59,18 +124,7 @@
       
 background-color: rgba(12, 95, 118, 0.855);
 }
-.input-main{
-    width: 300px;
-    height: 50px;
-    border-radius: 14px;
-    border-color: white;
-    border-style: initial;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-    
-}
+
 @media(max-width: 680px) {
     .all-page{
         margin-top: 60px;

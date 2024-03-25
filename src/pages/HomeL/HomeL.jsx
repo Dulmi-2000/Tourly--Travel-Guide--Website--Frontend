@@ -22,9 +22,15 @@ const HomeL = () => {
         {/* <div className='main-picture col-12' style={{ backgroundImage: `url(${coverImage})` }}>
        
         </div> */}
+<<<<<<< HEAD
       <div>
 
         <video autoPlay loop muted >
+=======
+      
+      <div className=' col-12 '>
+        <video autoPlay loop muted  id='main-picture'>
+>>>>>>> 84307fc451cc8f57b797b0b4f3becfbca3e208ca
           <source src={bcvideo} type='video/mp4' />
         </video>
 
@@ -56,6 +62,7 @@ const HomeL = () => {
        </div>
            
           </div>
+          <br></br><br/>
     </div>
   )
 }

@@ -14,7 +14,7 @@ const Footer = () => {
     
         <div className='footer-section'>
             <div className="container col-12">
-                <div className='left-half col-12 col-lg-4 col-md-12 col-sm-12'>
+                <div className='left-half col-12 col-lg-5 col-md-12 col-sm-12'>
                     <h3 className='hs1'>Tourly</h3>
                     <br></br>
                     <p className='brif'>
@@ -28,13 +28,14 @@ const Footer = () => {
                         <img src={x} className='each-icon'/>
                         <img src={linkedin} className='each-icon'/>
                     </div>
+                 
                 </div>
 
+                
 
-
-                <div className='right-half row col-12 col-lg-8 col-md-12 col-sm-12'>
-
-                <div className='links1 col-12 col-lg-4 col-md-3 col-sm-12 '>
+                <div className='right-half row col-12 col-lg-7 col-md-12 col-sm-12'>
+                <br></br>
+                <div className='links1 col-12 col-lg-4 col-md-5 col-sm-12 '>
                 <h3 className='hs'>Quick Links</h3>
                     <br></br>
                     <div className='quick-link'>
@@ -45,7 +46,7 @@ const Footer = () => {
                         <p className='p1'>Home</p>
                     </div>
                 </div>
-
+<br></br>
                 {/* <div className='links1 col-12 col-lg-4 col-md-3 col-sm-12 '>
                 <h3 className='hs'>Tourly</h3>
                     <br></br>
@@ -58,23 +59,23 @@ const Footer = () => {
                     </div>
                 </div> */}
 
-                <div className='links1 col-12 col-lg-3 col-md-2 col-sm-12 '>
+                <div className='links1 col-12 col-lg-3 col-md-4 col-sm-12 '>
                 <h3 className='hs'>Contacts</h3>
                     <br></br>
-                    <div>
+                    <div className='col-12'>
                        
-                        <div className='contact'>
-                        <img src={phn} className='each-icon'/>
+                        <div className='contact col-12'>
+                        <img src={phn} className='each-icon1'/>
                         <p className='p1'>+94 767 863 542 </p>
                         </div>
                            
-                        <div className='contact'>
-                        <img src={phn} className='each-icon'/>
+                        <div className='contact col-12'>
+                        <img src={phn} className='each-icon1'/>
                         <p className='p1'>+94 767 863 542 </p>
                         </div>
 
-                        <div className='contact'>
-                        <img src={phn} className='each-icon'/>
+                        <div className='contact '>
+                        <img src={phn} className='each-icon1'/>
                         <p className='p1'>+94 767 863 542 </p>
                         </div>
                     </div>
