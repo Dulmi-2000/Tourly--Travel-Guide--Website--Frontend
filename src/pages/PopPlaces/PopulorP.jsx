@@ -28,11 +28,16 @@ const PopulorP = () => {
   const loadImages = async () => {
     try {
       const result = await axios.get('http://localhost:8080/destination/image/beach');
-      setImageLinks(result.data); // Update image links state with the fetched data
+      setImageLinks(result.data); 
       console.log(result);
     } catch (error) {
       console.error('Error loading images:', error);
     }
+  };
+
+  const handleImageClick = (index) => {
+     
+    console.log('Image clicked:', index);
   };
 
   return (
@@ -45,11 +50,18 @@ const PopulorP = () => {
       <div className='pictures' ref={sliderRef} style={{ overflowX: 'scroll', scrollBehavior: 'smooth' }}>
         {/* Render each image in the imageLinks array */}
         {imageLinks.map((imageUrl, index) => (
-          <img key={index} src={imageUrl} alt={`Image ${index}`} className='places' />
+          // eslint-disable-next-line jsx-a11y/img-redundant-alt
+          <img
+            key={index}
+            src={imageUrl}
+            alt={`Image ${index}`}
+            className='places'
+            onClick={() => handleImageClick(index)} 
+          />
         ))}
       </div>
 
-      {/* Right arrow positioned on the right side */}
+    
       <div className='right-arrow-container'>
         <MdChevronRight onClick={slideRight} size={40} className='right-arrow' />
       </div>

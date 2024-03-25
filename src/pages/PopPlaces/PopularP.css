@@ -11,6 +11,18 @@
     
     
 }
+.pictures1{
+  display: flex;
+   flex-wrap: nowrap;
+   overflow-x: scroll;
+   animation-iteration-count: infinite;
+   gap: 20px;
+   scroll-behavior: smooth;
+   margin-left: 12px;
+   margin-right: 12px;
+   background-color: antiquewhite;
+   
+}
 .places{
   
     height: 300px;

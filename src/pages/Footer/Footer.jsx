@@ -6,6 +6,7 @@ import fb from '../../Assets/fb.png'
 import insta from '../../Assets/insta.png'
 import x from '../../Assets/twitter.png'
 import linkedin from '../../Assets/linkd.png'
+import phn from '../../Assets/phn.jpg'
 
 
 const Footer = () => {
@@ -63,17 +64,17 @@ const Footer = () => {
                     <div>
                        
                         <div className='contact'>
-                        <img src='./phn.jpg' className='each-icon'/>
+                        <img src={phn} className='each-icon'/>
                         <p className='p1'>+94 767 863 542 </p>
                         </div>
                            
                         <div className='contact'>
-                        <img src='./phn.jpg' className='each-icon'/>
+                        <img src={phn} className='each-icon'/>
                         <p className='p1'>+94 767 863 542 </p>
                         </div>
 
                         <div className='contact'>
-                        <img src='./phn.jpg' className='each-icon'/>
+                        <img src={phn} className='each-icon'/>
                         <p className='p1'>+94 767 863 542 </p>
                         </div>
                     </div>
