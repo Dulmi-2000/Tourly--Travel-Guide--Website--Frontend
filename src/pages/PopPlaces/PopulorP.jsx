@@ -9,16 +9,28 @@ const PopulorP = () => {
 
   const slideLeft = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollLeft -= 500;
+      sliderRef.current.scrollLeft -= 320;
     }
   };
 
   const slideRight = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollLeft += 500;
+      sliderRef.current.scrollLeft += 320;
     }
   };
 
+<<<<<<< HEAD
+  // Array of image URLs
+  const images = [
+    require('../../Assets/coastal123.jpeg'),
+    'https://leisuregrouptravel.com/wp-content/uploads/2021/01/Photo-Credit-Austin-Adventures-North-Carolina-Grandfather-Mtn.jpg',
+    'https://leisuregrouptravel.com/wp-content/uploads/2021/01/Photo-Credit-Austin-Adventures-North-Carolina-Grandfather-Mtn.jpg',
+    'https://leisuregrouptravel.com/wp-content/uploads/2021/01/Photo-Credit-Austin-Adventures-North-Carolina-Grandfather-Mtn.jpg',
+    'https://leisuregrouptravel.com/wp-content/uploads/2021/01/Photo-Credit-Austin-Adventures-North-Carolina-Grandfather-Mtn.jpg',
+    'https://leisuregrouptravel.com/wp-content/uploads/2021/01/Photo-Credit-Austin-Adventures-North-Carolina-Grandfather-Mtn.jpg',
+    
+  ];
+=======
   const [imageLinks, setImageLinks] = useState([]);
 
   useEffect(() => {
@@ -39,6 +51,7 @@ const PopulorP = () => {
      
     console.log('Image clicked:', imageLink);
   };
+>>>>>>> 0668c727fb890295fdf66195701caaec99939509
 
   return (
     <div className='container PopularP-Container col-12'>

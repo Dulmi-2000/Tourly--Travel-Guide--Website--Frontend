@@ -11,6 +11,7 @@ import Destination from './pages/Destination/destination';
 import Location from './pages/Location/Location';
 import Footer from './pages/Footer/Footer';
 import PopulorP from './pages/PopPlaces/PopulorP';
+import HomeL from './pages/HomeL/HomeL';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
           <Route path='/Login/Login' element={<Login />}></Route> 
           <Route path='/Signup/Signup' element={<Signup />}></Route> 
           <Route path='/Location/Location/:locationName' element={<Location />}></Route> 
-          <Route path='/' element={<Home></Home>}></Route>
+          <Route path='/' element={<HomeL></HomeL>}></Route>
 
       </Routes>
       </Router>
