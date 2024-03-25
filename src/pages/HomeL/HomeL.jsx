@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import coverImage from '../../Assets/CoverN.jpg';
 import './HomeL.css'
-
+import tourly from '../../Assets/tourly.mp4'
+import bcvideo from '../../Assets/tourly.mp4'
 
 const HomeL = () => {
     const navigate = useNavigate();
@@ -20,23 +21,26 @@ const HomeL = () => {
   
   return (
     <div className='all-page col-12'>
-        <div className='main-picture col-12' style={{ backgroundImage: `url(${coverImage})` }}>
+        {/* <div className='main-picture col-12' style={{ backgroundImage: `url(${coverImage})` }}>
        
-        </div>
+        </div> */}
+      
+      <div>
+        <video autoPlay loop muted >
+          <source src={bcvideo} type='video/mp4' />
+        </video>
+      </div>
         <div className='container ddd col-12' onSubmit={(e) => onSubmit(e)}>
           <div className='col-12 main-title'>
-         <h1 className='title-details'> Discover Your Next Adventure with Tourly</h1>
-            
+          
           </div>
        <div className='search-main col-12'>
        <form  onSubmit={onSubmit}>
           <div className="search-group col-12">
-            <svg width="400px" height="300px" viewBox="0 0 1024 1024" className="icon1" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" strokeWidth="40.96">
-              {/* SVG path here */}
-            </svg>
+            
             <input
               className='input-main'
-              placeholder='    Enter your destination'
+              placeholder='Enter your destination'
               type='text'
               autoComplete='off'
               value={locationName}

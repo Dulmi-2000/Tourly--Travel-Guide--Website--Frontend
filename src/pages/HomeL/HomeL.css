@@ -42,6 +42,7 @@
 .search-group{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
   
 }
 
@@ -67,6 +68,8 @@ background-color: rgba(12, 95, 118, 0.855);
     justify-content: center;
     display: flex;
     align-items: center;
+    padding-left: 30px;
+    
 }
 @media(max-width: 680px) {
     .all-page{
