@@ -25,8 +25,8 @@ const HomeL = () => {
        
         </div> */}
       
-      <div>
-        <video autoPlay loop muted >
+      <div className=' col-12 '>
+        <video autoPlay loop muted  id='main-picture'>
           <source src={bcvideo} type='video/mp4' />
         </video>
       </div>
@@ -57,6 +57,7 @@ const HomeL = () => {
        </div>
            
           </div>
+          <br></br><br/>
     </div>
   )
 }
