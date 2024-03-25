@@ -11,6 +11,18 @@
     
     
 }
+.pictures1{
+  display: flex;
+   flex-wrap: nowrap;
+   overflow-x: scroll;
+   animation-iteration-count: infinite;
+   gap: 20px;
+   scroll-behavior: smooth;
+   margin-left: 12px;
+   margin-right: 12px;
+   background-color: antiquewhite;
+   
+}
 .places{
   width: 300px;
     height: 300px;
@@ -54,6 +66,9 @@ width: 100%;
   border-radius: 50%;
   background-color:rgb(15, 118, 146);
 }
+.left-arrow-container:hover{
+  background-color: rgb(64, 87, 93);
+}
 
 .right-arrow-container {
   position: absolute;
@@ -63,4 +78,8 @@ width: 100%;
   padding: 5px;
   border-radius: 50%;
   background-color:  rgb(15, 118, 146);
+  
+}
+.right-arrow-container:hover{
+background-color: rgb(64, 87, 93);
 }

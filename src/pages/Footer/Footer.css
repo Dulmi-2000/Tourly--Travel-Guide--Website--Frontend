@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto+Condensed:wght@500&family=Whisper&display=swap');
+
+
 .footer-section{
     background-color:  rgb(15, 118, 146);
     padding-top: 20px;
     padding-bottom: 50px;
+  
 }
 .container{
-  gap: 20px;
+    gap: 20px;
     display: flex;
     flex-wrap: wrap;
 }
 .left-half{
     display: grid;
-  justify-content: center;
+    justify-content: center;
   
 }
 .right-half{
@@ -19,14 +23,22 @@
     gap: 25px;
 }
 .brif{
-    width: 250px;
-  
+    width: 350px;
+    color: white;
+    font-size: 17px;
 }
-p{
+.p1{
     color: white;
 }
 .hs{
-    color: green;
+    color: white;
+    text-shadow: #000000;
+   
+}
+.hs1{
+    color: rgb(255, 255, 255);
+    text-shadow: #000000;
+    font-family: 'Kalam', sans-serif;
     
 }
 .links1{
@@ -39,14 +51,15 @@ p{
 .icons{
     display: flex;
     gap: 30px;
-   padding-bottom: 30px;
+ padding-bottom: 30px;
 }
 .each-icon{
     width: 20px;
     height: 20px;
     border-radius: 5px;
- 
+    
 }
+
 .contact{
     padding-bottom: 10px;
     display: flex;
@@ -74,12 +87,16 @@ p{
     .hs{
         justify-content: center;
         display: flex;
+     
+        /* -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-color: rgb(15, 118, 146); */
     }
     .quick-link{
         justify-content: center;
         align-items: center;
         display: grid;
         margin-left: -10px;
+        
     }
     .right-half{
         display: grid;

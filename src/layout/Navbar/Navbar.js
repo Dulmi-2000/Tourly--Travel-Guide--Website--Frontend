@@ -28,6 +28,7 @@ export default function Navbar() {
       <header className='header flex'>
 
         <div className='logodiv'>
+          
         <Link className="navbar-brand" to="/">Tourly</Link>
        
         </div>
