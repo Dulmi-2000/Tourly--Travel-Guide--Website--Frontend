@@ -8,12 +8,12 @@ export default function Destination() {
     <div className='container full'>
       
       
-      <h1 className='topic col-12 '>Nilaveli Beach</h1>
+      <h1 className='topic col-12 '>Pasikuda Beach</h1>
       <br></br>
       <div className='imagebox col-12'>
 
         <div className=' col-12 col-lg-8 col-md-8 col-sm-12'>
-          <img src='https://mahaweli.lk/wp-content/uploads/2022/04/Nilaveli-Beach-Trincomalee-1140x530.jpg'
+          <img src='https://srilankatravelpages.com/media/2023/04/Pasikuda-Beach-view-.jpg'
             alt='' className='imagelink1'>
             
           </img>
@@ -23,13 +23,13 @@ export default function Destination() {
         
       
         <div className=''>
-        <img src='https://images.trvl-media.com/hotels/12000000/11020000/11020000/11019945/ac76781a_z.jpg'
+        <img src='https://d3a2q5al71qg9.cloudfront.net/sites/13/2020/07/1-2.jpg'
             alt='' className='imagelink2'>
             
           </img>
         </div>
         <div className=''>
-        <img src='https://www.placestostay.lk/wp-content/uploads/2024/01/Snorkeling-in-Nilaveli-Beach-Trincomalee-Sri-Lanka-1024x536.jpg'
+        <img src='https://us.lakpura.com/cdn/shop/files/LK66157B60-10-E_cbb0040f-c6bc-44d7-9bd4-fc79d04c430e.jpg?v=1653374746&width=3200'
             alt='' className='imagelink2'>
             
           </img> 

@@ -20,7 +20,10 @@ const PopulorP = () => {
   };
 
 
+<<<<<<< HEAD
   // Array of image URLs
+=======
+>>>>>>> d79f188cfc50d753fde84302616e5f6fbcbefd7b
   const images = [
     require('../../Assets/coastal123.jpeg'),
     'https://leisuregrouptravel.com/wp-content/uploads/2021/01/Photo-Credit-Austin-Adventures-North-Carolina-Grandfather-Mtn.jpg',
@@ -47,9 +50,9 @@ const PopulorP = () => {
     }
   };
 
-  const handleImageClick = (index) => {
+  const handleImageClick = (imageLink) => {
      
-    console.log('Image clicked:', index);
+    console.log('Image clicked:', imageLink);
   };
 
 
