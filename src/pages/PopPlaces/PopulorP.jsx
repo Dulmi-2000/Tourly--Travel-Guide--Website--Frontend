@@ -35,9 +35,9 @@ const PopulorP = () => {
     }
   };
 
-  const handleImageClick = (index) => {
+  const handleImageClick = (imageLink) => {
      
-    console.log('Image clicked:', index);
+    console.log('Image clicked:', imageLink);
   };
 
   return (
