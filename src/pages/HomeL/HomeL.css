@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 @media ( max-width: 5000px){
-=======
-@media (min-width: 1001px){
->>>>>>> 4ded64629006a741c95a7da7bba2c5e301dc1203
 #main-picture{
    
     right: 0;
@@ -15,17 +11,7 @@
     filter: blur(0.5px);
 }
 }
-@media (min-width: 768px),( max-width: 1000px){
-    #main-picture{
-        right: 0;
-        bottom: 0;
-       width: 100%; 
-        height: 75vh;
-        object-fit: fill;
-       
-        position: relative;
-    }
-}
+
 @media (max-width:767px){
     #main-picture{
         right: 0;
@@ -51,12 +37,29 @@
         
     }
     .ddd{
-        margin-top: -42vh;
+        margin-top: -56vh;
+    }
+   
+   
+}
+@media (max-width: 435px){
+    .ddd{
+        margin-top: -58vh;
+        text-shadow: black;
+        box-shadow: black;
     }
 }
+@media (max-width: 310px){
+    .ddd{
+        margin-top: -62vh;
+        text-shadow: black;
+        box-shadow: black;
+    }
+}
+
 @media (min-width: 768px){
     .ddd{
-        margin-top: -37vh;
+        margin-top: -49vh;
         text-shadow: black;
         box-shadow: black;
     }
@@ -73,6 +76,13 @@
         box-shadow: black;
         
     }
+    .title-details{
+        font-size: 50px;
+       color: azure;
+        border-radius: 5px;
+        z-index: 100;
+        border-color: white;
+    }
 }
 
 
@@ -81,7 +91,7 @@
     margin-top: 66px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .main-title{
     text-align: center;
@@ -91,15 +101,11 @@
     text-decoration: solid;
     text-shadow: white;
     text-shadow: 5px;
+    margin-bottom: 30px;
+    
    
 }
-.title-details{
-    font-size: 80px;
-   color: azure;
-    border-radius: 5px;
-    z-index: 100;
-    border-color: white;
-}
+
 .search-main{
     display: flex;
     text-align: center;
@@ -111,8 +117,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 40px;
+    padding: 20px;
     background-color: rgba(15, 118, 146, 0.389);
+    border-radius: 20px;
   
 }
 
@@ -130,7 +137,7 @@
 background-color: rgba(12, 95, 118, 0.855);
 }
 
-@media(max-width: 680px) {
+@media(max-width: 767px) {
     .all-page{
         margin-top: 60px;
         justify-content: center;
@@ -138,7 +145,7 @@ background-color: rgba(12, 95, 118, 0.855);
         margin-bottom: 20px;
     }
     .title-details{
-        font-size: 50px;
+        font-size: 40px;
        color: azure;
         border-radius: 5px;
         z-index: 100;
@@ -157,7 +164,7 @@ background-color: rgba(12, 95, 118, 0.855);
     .main-picture{
         background-repeat: no-repeat;
         background-size:cover ;
-        height: 50vh;
+        height: 60vh;
         width: 100%;
         filter: blur(2px);
         
