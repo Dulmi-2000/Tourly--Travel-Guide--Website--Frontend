@@ -22,10 +22,15 @@ const HomeL = () => {
         {/* <div className='main-picture col-12' style={{ backgroundImage: `url(${coverImage})` }}>
        
         </div> */}
+<<<<<<< HEAD
       <div className=' col-12'>
         <video autoPlay loop muted  id='main-picture'>
           <source src={bcvideo} type='video/mp4' />
         </video>
+=======
+      <div className='col-12'>
+        <video src={bcvideo} muted autoPlay loop id='main-picture' type="video/mp4"></video>
+>>>>>>> 4ded64629006a741c95a7da7bba2c5e301dc1203
 
       </div>
         <div className='container ddd col-12' onSubmit={(e) => onSubmit(e)}>

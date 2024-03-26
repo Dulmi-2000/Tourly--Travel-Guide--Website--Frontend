@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @media ( max-width: 5000px){
+=======
+@media (min-width: 1001px){
+>>>>>>> 4ded64629006a741c95a7da7bba2c5e301dc1203
 #main-picture{
    
     right: 0;
@@ -29,7 +33,6 @@
        width: 100%; 
         height: 35vh;
         object-fit: fill;
-       
         position: relative;
     }
    
@@ -108,6 +111,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    padding: 40px;
+    background-color: rgba(15, 118, 146, 0.389);
   
 }
 
@@ -158,3 +163,9 @@ background-color: rgba(12, 95, 118, 0.855);
         
     }
 } 
+#myVideo {
+    width: 100%; 
+    height: 50%; 
+    object-fit: cover; 
+  }
+  
