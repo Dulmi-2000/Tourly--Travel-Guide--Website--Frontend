@@ -12,23 +12,23 @@ export default function Destination() {
       <br></br>
       <div className='imagebox col-12'>
 
-        <div className=' col-12 col-lg-8 col-md-8 col-sm-12'>
+        <div className=' col-12 col-lg-8 col-md-12 col-sm-12'>
           <img src='https://us.lakpura.com/cdn/shop/files/LKI9256041-01-E.jpg?v=1661430881&width=3840'
-            alt='' className='imagelink1'>
+            alt='' className='imagelink11'>
             
           </img>
         </div>
 
-        <div className='twoimages col-12 col-lg-4 col-sm-4'>
+        <div className='twoimages1 col-12 col-lg-4 col-sm-12'>
         
       
-        <div className=''>
+        <div className='col-md-6 col-lg-12 col-sm-12'>
         <img src='https://image-converter.sporski.com/imageConverter.php?url=%2F%2Fuploads.takeoffsurftravel.com%2F20170111180051_Untitled-1.jpg'
             alt='' className='imagelink2'>
             
           </img>
         </div>
-        <div className=''>
+        <div className=' col-md-6 col-lg-12 col-sm-12'>
         <img src='https://geckoroutes.com/wp-content/uploads/2020/03/arugam-bay-sri-lanka.jpg'
             alt='' className='imagelink2'>
             

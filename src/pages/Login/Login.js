@@ -45,8 +45,10 @@ export default function Login() {
                     <div className='rightside  col-lg-6'>
                         <h1 className='descript'>Welcome </h1>
                         <h1 className='descript'>Back</h1>
+                        <br /><br />
                     </div>
-                    <div className='leftside  col-lg-6'>
+                    
+                    <div className='leftside  col-lg-6 col-sm-12'>
                         <div className='frm col-12'>
                             <h1 className='logdes'>Login</h1>
                             <form onSubmit={(e) => handleSubmit(e)}>
@@ -76,8 +78,9 @@ export default function Login() {
                                     />
                                     <br />
                                 </div>
-                                <p style={{ textAlign: 'center' }}>
-                                    <Link className='link3' to=''>Forgot Password ?</Link>
+                                <br />
+                                <p>
+                                    <Link className='link33' to=''>Forgot Password ?</Link>
                                 </p>
                                 <br />
                                 <br />

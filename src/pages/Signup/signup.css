@@ -3,6 +3,7 @@
   width: 100%;
   height: 93vh;
   background-size: cover;
+  
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
@@ -27,26 +28,10 @@ justify-content: center;
   
 }
 
-.rightside{
- justify-content: center;
-  text-align: center;
-}
 
-.leftside{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 
-.frm{
-  align-items: center;
-  justify-content: center;justify-items: center;
-  text-align: center;
-  background-color: rgba(12, 95, 118, 0.283);
-  padding-top:60px ;
-  padding-bottom: 50px;
-  
-}
+
+
 
   .input11 {
     width: 60%;
@@ -202,7 +187,6 @@ justify-content: center;
   justify-content: center;justify-items: center;
   text-align: center;
   background-color: rgba(12, 95, 118, 0.283);
-  
   padding-bottom: 60px;
   
 }

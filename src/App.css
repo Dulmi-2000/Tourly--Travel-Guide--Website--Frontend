@@ -104,3 +104,30 @@ img, video{
 input{
   font-size: 100%;
 }*/
+
+
+
+
+.frm{
+  align-items: center;
+  justify-content: center;justify-items: center;
+  text-align: center;
+  background-color: rgba(12, 95, 118, 0.283);
+  padding-top:60px ;
+  padding-bottom: 50px;
+  
+}
+.rightside{
+  justify-content: center;
+   text-align: center;align-items: center;
+   align-content: center;
+   justify-self: center;
+   justify-items: center;
+ 
+ }
+ .leftside{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}

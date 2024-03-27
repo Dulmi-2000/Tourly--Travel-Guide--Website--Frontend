@@ -71,7 +71,9 @@ const PopulorP = () => {
             className='places'
             onClick={() => handleImageClick(index)} 
           />
+          
         ))}
+        <div></div>
       </div>
 
     

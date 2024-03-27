@@ -78,12 +78,12 @@ const loadUser = async () => {
 
         <div className=' col-12 col-lg-8 col-md-8 col-sm-12'>
           <img src={imageLink}
-            alt='' className='imagelink1'>
+            alt='' className='imagelink11'>
             
           </img>
         </div>
 
-        <div className='twoimages col-12 col-lg-4 col-sm-4'>
+        <div className='twoimages1 col-12 col-lg-4 col-sm-4'>
         
       
         <div className=''>
