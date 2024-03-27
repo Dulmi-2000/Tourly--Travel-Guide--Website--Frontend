@@ -33,7 +33,7 @@ export default function Home() {
            <form className='form' onSubmit={onSubmit}>
           <div className="group-data">
             <svg width="300px" height="300px" viewBox="0 0 1024 1024" className="icon1" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" strokeWidth="40.96">
-              {/* SVG path here */}
+              {/* SVG path  */}
             </svg>
             <input
               className='input'

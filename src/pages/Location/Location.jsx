@@ -106,8 +106,7 @@ const loadUser = async () => {
         <CiLocationOn className='iconsearch' />
           <span className='name col-12'>{district}</span>
           </span>
-      <br /><br></br>
-      
+    
       <div className='row2'>
         <br></br>
         <br />
