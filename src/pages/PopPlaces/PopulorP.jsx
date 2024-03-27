@@ -3,8 +3,58 @@ import axios from 'axios';
 import { useRef } from 'react';
 import './PopularP.css';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+
 
 const PopulorP = () => {
+
+  
+  const [location, setLocation] = useState({
+    description1: '',
+    description2: '',
+    description3: '',
+    description4: '',
+    imageLink: '',
+    imageLink1: '',
+    imageLink2: '',
+    imageLink3: '',
+    locationName: '',
+    district: '',
+    mapLink: '',
+    list1: '',
+    list2: '',
+    list3: '',
+    list4: '',
+    list5: '',
+    list6: '',
+    list7: '',
+    list8: '',
+    list9: '',
+    list10: '',
+    ltopic1: '',
+    ltopic2: '',
+    ltopic3: '',
+    ltopic4: '',
+    ltopic5: '',
+    ltopic6: '',
+    ltopic7: '',
+    ltopic8: '',
+    ltopic9: '',
+    ltopic10: '',
+    date: '',
+    datedes1: '',
+    datedes2: '',
+    datedes3: '',
+    datedes4: '',
+    otherDetails: '',
+
+  });
+  const { locationName } = useParams();
+
+
+  const { description1,description2,description3,description4,ltopic1,ltopic2,ltopic3,ltopic4,ltopic5,ltopic6,ltopic7,ltopic8,ltopic9,ltopic10,id,district, list1,list2,list3,list4,list5,list6,list7,list8,list9,list10,mapLink,otherDetails,date,datedes1,datedes2,datedes3,datedes4,imageLink,imageLink1,imageLink2,imageLink3 } = location;
+
   const sliderRef = useRef(null);
 
   const slideLeft = () => {
@@ -31,6 +81,7 @@ const PopulorP = () => {
     
   ];
 
+
   const [imageLinks, setImageLinks] = useState([]);
 
   useEffect(() => {
@@ -47,10 +98,15 @@ const PopulorP = () => {
     }
   };
 
-  const handleImageClick = (imageLink1) => {
-     
+
+  const navigate = useNavigate();
+
+ const handleImageClick = (imageLink1, locationName) => {
     console.log('Image clicked:', imageLink1);
-  };
+    navigate(`/Location/Location/${locationName}`);
+};
+
+  
 
 
   return (
@@ -60,19 +116,25 @@ const PopulorP = () => {
         <MdChevronLeft onClick={slideLeft} size={40} className='left-arrow' />
       </div>
 
-      <div className='pictures' ref={sliderRef} style={{ overflowX: 'scroll', scrollBehavior: 'smooth' }}>
-        {/* Render each image in the imageLinks array */}
-        {imageLinks.map((imageUrl, index) => (
-          // eslint-disable-next-line jsx-a11y/img-redundant-alt
-          <img
-            key={index}
-            src={imageUrl}
-            alt={`Image ${index}`}
-            className='places'
-            onClick={() => handleImageClick(index)} 
-          />
-        ))}
-      </div>
+<div className='pictures' ref={sliderRef} style={{ overflowX: 'scroll', scrollBehavior: 'smooth' }}>
+  {imageLinks.map((location, index) => (
+    <div key={index} className="location-container">
+      
+
+      {[location.imageLink].map((imageUrl, imgIndex) => (
+        // eslint-disable-next-line jsx-a11y/img-redundant-alt
+        <img
+          key={imgIndex}
+          src={imageUrl}
+          alt={`Location ${index} Image ${imgIndex}`}
+          className='places'
+          onClick={() => handleImageClick(location.imageLink1, location.locationName)} 
+        />
+      ))}
+    </div>
+  ))}
+</div>
+
 
     
       <div className='right-arrow-container'>

@@ -42,9 +42,12 @@ const HomeL = () => {
                 <div className="col-12 main-title">
                     <h1 className="title-details"> Discover Your Next Adventure with Tourly</h1>
                 </div>
-                <div className="search-main col-12">
-                    <form>
-                        <div className="search-group col-12">
+          <div className="search-main col-12">
+            
+            
+              <div className='searchbar'>
+
+                        <div className="search-group">
                             <input
                                 className="input-main"
                                 placeholder="Enter your destination"
@@ -54,6 +57,7 @@ const HomeL = () => {
                                 onChange={onInputChange}
                                 required
                 />
+                
                 {suggestions.length > 0 && (
                         <div className="suggestions">
                             <ul>
@@ -65,8 +69,16 @@ const HomeL = () => {
                             </ul>
                         </div>
                     )}
-                        </div>
-                    </form>
+              </div>
+              
+                
+                <div className='btn-border'>
+                <button className='btn44'>Search</button>
+             </div>
+             
+             
+              </div>
+                    
                     
                 </div>
             </div>
