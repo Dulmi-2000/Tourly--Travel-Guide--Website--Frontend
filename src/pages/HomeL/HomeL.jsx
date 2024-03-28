@@ -44,8 +44,7 @@ const HomeL = () => {
                 </div>
           <div className="search-main col-12">
             
-            
-              <div className='searchbar'>
+              <div className='searchbar '>
 
                         <div className="search-group">
                             <input
