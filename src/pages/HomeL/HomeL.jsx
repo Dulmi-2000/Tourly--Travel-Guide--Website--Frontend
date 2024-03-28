@@ -3,8 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import coverImage from '../../Assets/CoverN.jpg';
 import './HomeL.css';
 import bcvideo from '../../Assets/tourly.mp4';
+import Navbar from '../../layout/Navbar/Navbar';
 
 const HomeL = () => {
+  <Navbar></Navbar>
+  
     const navigate = useNavigate();
     const [locationName, setLocationName] = useState('');
     const [suggestions, setSuggestions] = useState([]);

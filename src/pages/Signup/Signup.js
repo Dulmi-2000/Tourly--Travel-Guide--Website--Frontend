@@ -23,10 +23,7 @@ export default function Signup() {
         // Email already exists, display error message
         setErrMsg('Email already exists. Please login.');
       } else {
-        // Email doesn't exist, proceed with signup
-        // You may also want to validate other fields like password matching here
-        
-        // Perform additional validation if needed
+       
         if (password !== confirmPassword) {
           setErrMsg('Passwords do not match.');
           return;

@@ -5,10 +5,11 @@ import './PopularP.css';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 import { Link, useParams } from 'react-router-dom';
-
+import Navbar from '../../layout/Navbar/Navbar';
 
 const PopulorP = () => {
 
+  <Navbar></Navbar>
   
   const [location, setLocation] = useState({
     description1: '',
@@ -116,23 +117,6 @@ const PopulorP = () => {
         <MdChevronLeft onClick={slideLeft} size={40} className='left-arrow' />
       </div>
 
-<<<<<<< HEAD
-      <div className='pictures' ref={sliderRef} style={{ overflowX: 'scroll', scrollBehavior: 'smooth' }}>
-        {/* Render each image in the imageLinks array */}
-        {imageLinks.map((imageUrl, index) => (
-          // eslint-disable-next-line jsx-a11y/img-redundant-alt
-          <img
-            key={index}
-            src={imageUrl}
-            alt={`Image ${index}`}
-            className='places'
-            onClick={() => handleImageClick(index)} 
-          />
-          
-        ))}
-        <div></div>
-      </div>
-=======
 <div className='pictures' ref={sliderRef} style={{ overflowX: 'scroll', scrollBehavior: 'smooth' }}>
   {imageLinks.map((location, index) => (
     <div key={index} className="location-container">
@@ -152,7 +136,6 @@ const PopulorP = () => {
   ))}
 </div>
 
->>>>>>> 6212886f807499b545d0e889ff743bec266d52d3
 
     
       <div className='right-arrow-container'>

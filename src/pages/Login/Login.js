@@ -29,12 +29,12 @@ export default function Login() {
                     setErrMsg('Incorrect password. Please try again.');
                 }
             } else {
-                // User not found, prompt to sign up
+                // User not found, link to sign up
                 setErrMsg('User not found. Please sign up.');
             }
         } catch (error) {
             console.error('Error:', error);
-            // Handle errors here, log or set error messages as needed
+            // Handle errors here
         }
     };
 

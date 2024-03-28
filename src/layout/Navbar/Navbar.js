@@ -50,7 +50,7 @@ export default function Navbar() {
             <Link className="navlink" to="Destination/Destination">Destination</Link>
           </li>
           <li className="navitem">
-            <Link className="navlink" to="Blog/Blog">Blog</Link>
+            <Link className="navlink" to="Gallery/Gallery">Gallery</Link>
           </li>
           
             
