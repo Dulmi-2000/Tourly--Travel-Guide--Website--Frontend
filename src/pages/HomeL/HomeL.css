@@ -1,6 +1,5 @@
 @media ( max-width: 5000px){
 #main-picture{
-   
     right: 0;
     bottom: 0;
     width: 100%; 
@@ -22,7 +21,21 @@
     -webkit-text-stroke-color: rgb(15, 118, 146);
 }
 }
-
+@media (max-width:1400px){
+    .ddd{
+        margin-top: -56vh;
+    }
+    .title-details{
+        font-size: 47px;
+       color: azure;
+        border-radius: 5px;
+        z-index: 100;
+        border-color: white;
+    }
+    .search-main{
+        margin-top: -45px;
+    }
+}
 @media (max-width:767px){
     #main-picture{
         right: 0;
@@ -32,12 +45,11 @@
         object-fit: fill;
         position: relative;
     }
-   
 }
 @media (max-width:767px){
     .input-main{
-        width: 250px;
-        height: 50px;
+        width: 200px;
+        height: 40px;
         border-radius: 14px;
         border-color: white;
         border-style: initial;
@@ -50,16 +62,70 @@
     .ddd{
         margin-top: -56vh;
     }
+    .search-group{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 12px;
+        flex-direction: column;
+    }
    
-   
+}
+@media (max-width : 1000px){
+    .title-details{
+        font-size: 40px;
+       color: azure;
+        border-radius: 5px;
+        z-index: 100;
+        border-color: white;
+    }
+    .search-main{
+        margin-top: -40px;
+    }
 }
 @media (max-width: 435px){
     .ddd{
         margin-top: -58vh;
         text-shadow: black;
         box-shadow: black;
+
     }
+    .input-main{
+        width: 180px;
+        height: 35px;
+        border-radius: 7px;
+        border-color: white;
+        border-style: initial;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        box-shadow: rgb(15, 118, 146);
+        
+    }
+    .btn-border{
+
+        padding-top: 22px;
+        padding-right: 10px;
+        }
+        .btn44{
+            padding: 0.4rem 1rem;
+              border: 1px solid #ffffff;
+              border-radius: 7px;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              text-decoration: none;
+              color: white;
+              background-color: rgba(12, 95, 118, 0.855);
+              
+        
+        }
 }
+
+
+
 @media (max-width: 310px){
     .ddd{
         margin-top: -62vh;
@@ -70,7 +136,7 @@
 
 @media (min-width: 768px){
     .ddd{
-        margin-top: -49vh;
+        margin-top: -59vh;
         text-shadow: black;
         box-shadow: black;
     }
@@ -87,7 +153,32 @@
         box-shadow: rgb(15, 118, 146);
         
     }
-    
+    .search-group{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 12px;
+        flex-direction: column;
+    }
+    .btn-border{
+
+        padding-top: 22px;
+        padding-right: 20px;
+        }
+        .btn44{
+            padding: 0.7rem 2rem;
+              border: 1px solid #ffffff;
+              border-radius: 7px;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              text-decoration: none;
+              color: white;
+              background-color: rgba(12, 95, 118, 0.855);
+              
+        
+        }
 }
 
 
@@ -118,38 +209,16 @@
     align-items: center;
     
 }
-.search-group{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
-    border-radius: 12px;
-    flex-direction: column;
-}
+
 .searchbar{
     display: flex;
     background-color: rgba(15, 118, 146, 0.389);
     border-radius: 10px;
+    flex-wrap: wrap;
     /* flex-direction: row; */
 }
-.btn44{
-    padding: 0.6rem 2rem;
-      border: 1px solid #ffffff;
-      border-radius: 7px;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      text-decoration: none;
-      color: white;
-      background-color: rgba(12, 95, 118, 0.855);
-      
 
-}
-.btn-border{
 
-padding-top: 22px;
-padding-right: 20px;
-}
 
 @media(max-width: 767px) {
     .all-page{
@@ -159,7 +228,7 @@ padding-right: 20px;
         margin-bottom: 20px;
     }
     .title-details{
-        font-size: 40px;
+        font-size: 30px;
        color: azure;
         border-radius: 5px;
         z-index: 100;
@@ -183,6 +252,25 @@ padding-right: 20px;
         filter: blur(2px);
         
     }
+    .btn-border{
+padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 20px;
+        }
+        .btn44{
+            padding: 0.5rem 2rem;
+              border: 1px solid #ffffff;
+              border-radius: 7px;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              text-decoration: none;
+              color: white;
+              background-color: rgba(12, 95, 118, 0.855);
+              
+        
+        }
+        
 } 
 #myVideo {
     width: 100%; 
