@@ -196,7 +196,7 @@
               &:hover{
                 color: rgba(4, 144, 209, 0.885)
               }	
-              
+             
             }
           }
           .btn3{
@@ -235,7 +235,9 @@
       }
     }
   
-  
+  .navlink::selection{
+    color: green;
+  }
   
   
   

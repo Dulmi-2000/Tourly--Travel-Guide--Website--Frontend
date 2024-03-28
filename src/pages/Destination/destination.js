@@ -8,12 +8,12 @@ export default function Destination() {
     <div className='container full'>
       
       
-      <h1 className='topic col-12 '>Arugam Bay</h1>
+      <h1 className='topic col-12 '>Arugam Bay Beach</h1>
       <br></br>
       <div className='imagebox col-12'>
 
         <div className=' col-12 col-lg-8 col-md-12 col-sm-12'>
-          <img src='https://us.lakpura.com/cdn/shop/files/LKI9256041-01-E.jpg?v=1661430881&width=3840'
+          <img src='https://www.ceylonexpeditions.com/medias/destination_places/big/106/temple-of-the-sacred-tooth-relic-kandy.jpg'
             alt='' className='imagelink11'>
             
           </img>
@@ -23,13 +23,13 @@ export default function Destination() {
         
       
         <div className='col-md-6 col-lg-12 col-sm-12'>
-        <img src='https://image-converter.sporski.com/imageConverter.php?url=%2F%2Fuploads.takeoffsurftravel.com%2F20170111180051_Untitled-1.jpg'
+        <img src='https://besttimetovisitsrilanka.com/wp-content/uploads/2021/04/Kandy-and-The-Temple.jpg'
             alt='' className='imagelink2'>
             
           </img>
         </div>
         <div className=' col-md-6 col-lg-12 col-sm-12'>
-        <img src='https://geckoroutes.com/wp-content/uploads/2020/03/arugam-bay-sri-lanka.jpg'
+        <img src='https://srilankatourisminfo.com/wp-content/uploads/2019/02/image-result-for-temple-of-the-tooth-relic-3.jpeg'
             alt='' className='imagelink2'>
             
           </img> 
@@ -40,7 +40,7 @@ export default function Destination() {
 
       <span className='content-flex locationd col-12'>
         <CiLocationOn className='iconsearch' />
-          <span className='name col-12'> Trincomalee District </span>
+          <span className='name col-12'> Ampara District </span>
           </span>
     
       

@@ -1,0 +1,18 @@
+.whole-picture{
+  gap:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 419px){
+  .places-img1{
+      width: 300px;
+      height: 200px;
+  }
+}
+@media (min-width: 418px){
+  .places-img1{
+      width: 310px;
+      height: 230px;
+  }
+}

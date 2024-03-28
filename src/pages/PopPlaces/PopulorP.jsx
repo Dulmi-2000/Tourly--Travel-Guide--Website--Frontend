@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import './PopularP.css';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Navbar from '../../layout/Navbar/Navbar';
 
 const PopulorP = () => {

@@ -10,6 +10,9 @@ import Location from './pages/Location/Location';
 import Footer from './pages/Footer/Footer';
 import PopulorP from './pages/PopPlaces/PopulorP';
 import HomeL from './pages/HomeL/HomeL';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 function App() {
   return (

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 import { IoMdCloseCircle } from "react-icons/io";
 import { TbGridDots } from "react-icons/tb";
-
+import axios from 'axios';
 
 export default function Navbar() {
 
